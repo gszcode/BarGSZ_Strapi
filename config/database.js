@@ -4,7 +4,7 @@ module.exports = ({ env }) => ({
     default: {
       connector: "mongoose",
       settings: {
-        host: env("DATABASE_HOST", "@cluster0.cbqftak.mongodb.net"),
+        host: env("DATABASE_HOST", "cluster0.cbqftak.mongodb.net"),
         srv: env.bool("DATABASE_SRV", true),
         port: env.int("DATABASE_PORT", 27017),
         database: env("DATABASE_NAME", "bar_strapi"),
